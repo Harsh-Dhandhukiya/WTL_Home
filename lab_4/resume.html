@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resume</title>
+    <link rel="stylesheet" href="restyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Left Panel -->
+        <aside class="left-panel">
+            <div class="profile-picture">
+                <img src="Profile.JPG" alt="Profile Picture" class="profile-pic">
+            </div>
+            <nav class="navigation">
+                <button onclick="loadContent('name.html')" class="nav-button">Name</button>
+                <button onclick="loadContent('achievements.html')" class="nav-button">Achievements</button>
+                <button onclick="loadContent('skills.html')" class="nav-button">Skills</button>
+                <button onclick="loadContent('contact.html')" class="nav-button">Contact</button>
+                <button onclick="loadContent('experience.html')" class="nav-button">Experience</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1 class="name">HARSH DHANDHUKIYA</h1>
+                <p class="designation"><i>Student</i></p>
+            </header>
+            <section class="content-frame">
+                <iframe id="content-frame" src="name.html" frameborder="0" allowfullscreen></iframe>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Function to load content into the iframe
+        function loadContent(page) {
+            const iframe = document.getElementById("content-frame");
+            iframe.src = page; // Update the iframe source dynamically
+        }
+    </script>
+</body>
+</html>
