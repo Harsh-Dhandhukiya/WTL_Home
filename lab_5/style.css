@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #000; /* Added table border */
+}
+
+td {
+    padding: 30px;
+    border: 1px solid #000; /* Added cell border */
+}
+
+/* Header section */
+#header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.name {
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subname {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Section styles */
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 25px 0 10px 0;
+    text-transform: uppercase;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 5px 0 15px 0;
+}
+
+/* Experience section */
+#experience h4 {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#experience span {
+    display: inline-block;
+}
+
+#experience span:nth-child(2) {
+    float: right;
+}
+
+#experience span:nth-child(4) {
+    float: right;
+    color: #666;
+}
+
+ul {
+    margin: 10px 0 20px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Education section */
+#Education span {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#Education h4 {
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Skills section */
+#skills p {
+    margin: 10px 0;
+}
+
+/* Certification section */
+#certification p {
+    margin: 10px 0;
+}
+
+/* Key Achievements section */
+#Achievements {
+    margin-top: 20px;
+}
