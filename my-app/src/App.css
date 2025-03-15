@@ -1,0 +1,60 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Light background for better contrast */
+  }
+  
+  /* Container to hold everything */
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Header (Top of the Page) */
+  .header {
+    background-color: #3a8eeb; /* Changed to a blue shade */
+    color: white;
+    text-align: center;
+    padding: 20px; /* Increased padding for a more spacious look */
+    font-size: 2em; /* Increased font size for better visibility */
+  }
+  
+  /* Content Area (Sidebar + Main Content) */
+  .content-area {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar (Left Side) */
+  .sidebar {
+    width: 25%; /* Increased width for better usability */
+    background-color: #ffffff; /* Changed to white for a cleaner look */
+    padding: 20px; /* Increased padding for better spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+  
+  /* Main Content (Centered) */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; /* Increased font size for better readability */
+    background-color: #e9ecef; /* Light gray background for contrast */
+    padding: 20px; /* Added padding for better spacing */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Added inner shadow for depth */
+  }
+  
+  /* Footer (Bottom of the Page) */
+  .footer {
+    background-color: #3a8eeb; /* Same blue shade as header */
+    color: white;
+    text-align: center;
+    padding: 15px; /* Increased padding for consistency */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

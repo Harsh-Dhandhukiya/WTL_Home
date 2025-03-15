@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="file"] {
+    font-family: 'Courier New', monospace;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.preview {
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Equal spacing between stars */
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.star {
+    color: lightgray;
+    transition: color 0.2s;
+}
+
+.star.hover,
+.star.active {
+    color: #ffcc00;
+}
+
+#ratingText {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .stars {
+        font-size: 1.5rem;
+    }
+
+    #ratingText {
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
