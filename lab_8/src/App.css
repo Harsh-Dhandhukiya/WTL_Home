@@ -1,0 +1,76 @@
+/* Center the entire page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Counter container */
+.counter-container {
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff; /* Pure white background */
+  width: 320px; /* Adjust the box width */
+}
+
+/* Style for the count display */
+.count-display {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Step size input styling */
+.step-input {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Button styling */
+button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:nth-child(1) {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+button:nth-child(3) {
+  background-color: #2196f3; /* Blue */
+  color: white;
+}
